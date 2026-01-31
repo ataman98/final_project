@@ -1,0 +1,10 @@
+# Python environment
+venv/
+__pycache__/
+
+# Database (Private data)
+*.db
+
+# VS Code / OS files
+.vscode/
+.DS_Store
