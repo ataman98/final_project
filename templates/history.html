@@ -10,6 +10,7 @@
                 <th>Description</th>
                 <th>Category</th>
                 <th>Amount</th>
+                <th>Source</th>
             </tr>
         </thead>
         <tbody>
@@ -18,7 +19,8 @@
                 <td>{{ row.date }}</td>
                 <td>{{ row.description }}</td>
                 <td>{{ row.category }}</td>
-                <td>${{ row.amount }}</td> 
+                <td>${{ row.amount }}</td>
+                <td>{{ row.source }}</td>  
             </tr>
             {% endfor %}
         </tbody>

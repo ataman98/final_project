@@ -5,9 +5,12 @@
     
     <form action="/upload" method="post" enctype="multipart/form-data">
         <div class="mb-3">
-            <label for="file" class="form-label">Select CSV File</label>
-            <input type="file" name="file" id="file" class="form-control" accept=".csv" required>
+          <!--  <label for="file" class="form-label">Select CSV File</label> -->
+            <input type="file" name="file" id="file" class="form-control w-auto" accept=".csv" required>
         </div>
-        <button type="submit" class="btn btn-primary">Upload</button>
+        <button type="submit" class="btn btn-primary mb-3">Upload</button>
     </form>
+    <div class="alert alert-info" role="alert">
+            Please note that your CSV file must have the following columns: <b>Date</b>, <b>Description</b>, <b>Category</b>, <b>Amount</b>, and <b>Source</b>.
+    </div>
 {% endblock %}
