@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <div class="container text-center mt-5">
+        <h1 class="display-4">Finance Tracker</h1>
+        <p class="lead">Control your spending, track your habits, and save for the future.</p>
+        
+        <hr class="my-4">
+        
+        <p>Get started by uploading your latest bank statement.</p>
+        
+        <a href="/upload" class="btn btn-primary btn-lg">Upload Statement</a>
+        
+        <br><br>
+        <a href="/history" class="text-muted">View past transactions</a>
+    </div>
+{% endblock %}
